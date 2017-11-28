@@ -1,0 +1,6 @@
+# Folders
+node_modules
+build
+
+# Misc
+.DS_Store
