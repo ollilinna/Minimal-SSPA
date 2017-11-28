@@ -1,0 +1,45 @@
+// Variables
+
+$color-background: #FFF
+$color-foreground: #000
+
+
+// Mixins
+
+@mixin typoGraphyBase
+  color: $color-foreground
+  font-family: 'Verdana', sans-serif
+  line-height: 1.45em
+
+@mixin fullSize
+  width: calc(100%)
+  height: calc(100vh)
+
+@mixin noSpacing
+  margin: 0
+  padding: 0
+
+@mixin center
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+// Native HTML
+
+html, body
+  @include typoGraphyBase
+  @include noSpacing
+  background: $color-background
+
+
+// Content
+
+#container
+  @include fullSize
+
+.example
+  @include fullSize
+  @include center
+  flex-direction: column
+  
