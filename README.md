@@ -152,7 +152,7 @@ Download module from npm:
 npm install module --save-dev
 ```
 
-In any ``.js`` in ``./src`` file:
+In any ``.js`` file in ``./src``:
 
 ```bash
 import {module} from 'node_modules/module/path/to/file.js'
